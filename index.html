@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogelparadies</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="startseite"><a href="">Startseite</a></li>
+                <li class="voegel_dropdown"><a href="#">Vögel</a>
+                    <ul class="dropdown">
+                        <li><a href="">Vogelarten</a></li>
+                        <li><a href="">Vögel zum Abgeben</a></li>
+                        <li><a href="">Volieren zum Abgeben</a></li>
+                    </ul>
+                </li>
+                <li class="hunde_dropdown"><a href="#">Hunde</a>
+                    <ul class="dropdown">
+                        <li><a href="">Hundearten</a></li>
+                        <li><a href="">Zum Abgeben</a></li>
+                        <li><a href="">Zubehör</a></li>
+                    </ul>
+                </li>
+                <li class="Kontakt"><a href="kontakt.html">Kontakt</a></li>
+                <li class="logo"><a>Hobbyzucht Richter</a></li>
+            </ul>
+        </nav>
+    </header>    <main class="container">
+    <!--Links-->
+        <section class="left">
+            <h2>Links</h2>
+            <p>Hier Text einfügen wie es dir gefällt</p>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </section>
+        <!--Hauptteil - Mitte-->
+        <section class="middle">
+            <h2>Hobbyzucht Richter</h2>
+            <p>Dies ist der zentrale Bereich, indem der Hauptinhalt angezeigt wird.</p>
+            <p>Füge weiten kontext zum bild ein balalkdahdsasdk</p>
+
+            <div class="gallery">
+                <div class="gallery-display">
+                <img id="current-image" src="Eden_1.jpg" alt="Aktuelles bild">
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="Eden_spike.jpg" alt="Thumbnail 1" onclick="changeImage('Eden_spike.jpg')">
+                <img src="freddy.jpg" alt="Thumbnail 2" onclick="changeImage('freddy.jpg')">
+                <img src="asdasf.jpg" alt="Thumbnail 3" onclick="changeImage('asdasf.jpg')">
+                <img src="Eden_1.jpg" alt="Thumbnail 4" onclick="changeImage('Eden_1.jpg')">
+            </div>
+        </div>
+        </section>
+        <!--Rechts-->
+        <section class="right">
+            <h2>Newsfeed</h2>
+            <div class="news-feed">
+                <article>
+                    <h3>Merz gewinnt!</h3>
+                    <p>Friedrich Merz gewinnt die Bundeskanzlerwahl! Unfassbar! <a href="#">Mehr lesen</a></p>
+                </article>
+                <article>
+                    <h3>Angela gewinnt!</h3>
+                    <p>Friedrich Merz gewinnt die Bundeskanzlerwahl! Unfassbar! <a href="#">Mehr lesen</a></p>
+                </article>
+                <article>
+                    <h3>Olaf Scholz gewinnt!</h3>
+                    <p>Friedrich Merz gewinnt die Bundeskanzlerwahl! Unfassbar! <a href="#">Mehr lesen</a></p>
+                </article>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
