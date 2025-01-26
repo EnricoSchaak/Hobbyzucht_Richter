@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: whitesmoke;
+    margin: 0;
+}
+
+h1 {
+    margin: 20px 0;
+    display: flex;
+    font: 128px bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.memory-spiel {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: 33.333%;
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.vorderseite, .rueckseite {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 2px solid white;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.vorderseite {
+    transform: rotateY(180deg);
+}
+
+#reload-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reload-button:hover {
+    background-color: #e64a19;
+}
